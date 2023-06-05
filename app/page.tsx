@@ -6,7 +6,8 @@ import homeImage from "../public/home-image.svg";
 import { Bottom, Content, Logo, Main, Middle, SelectUF } from "./styles";
 import UFSelect from "@/components/Filters/UFSelect";
 import CitySelect from "@/components/Filters/CitySelect";
-import { Button } from "@/components/Filters/Button/Button";
+import { Button } from "@/components/Button/Button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -41,7 +42,9 @@ export default function Home() {
               <UFSelect />
               <CitySelect />
             </SelectUF>
-            <Button />
+            <Link href="/pets">
+              <Button />
+            </Link>
           </div>
         </Bottom>
       </Content>

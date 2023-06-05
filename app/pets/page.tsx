@@ -4,7 +4,7 @@ import { Logo } from "@/components/icons/Logo";
 import * as S from "./styles";
 import CitySelect from "@/components/Filters/CitySelect";
 import UFSelect from "@/components/Filters/UFSelect";
-import { Button } from "@/components/Filters/Button/Button";
+import { Button } from "@/components/Button/Button";
 import AgeSelect from "@/components/Filters/AgeSelect";
 import EnergySelect from "@/components/Filters/EnergySelect";
 import SizeSelect from "@/components/Filters/SizeSelect";

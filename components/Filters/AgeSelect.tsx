@@ -19,8 +19,7 @@ export default function AgeSelect() {
         {!age ? (
           <InputLabel
             sx={{
-              fontSize: 20,
-              fontWeight: 800,
+              fontWeight: 500,
               color: "white",
             }}
             id="demo-simple-select-label"

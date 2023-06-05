@@ -94,6 +94,12 @@ h3 {
     font-size: 1.5rem;
 }
 
+a {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
 @media (max-width: 1350px) {
     flex-direction: column;
     gap: 3rem;
@@ -128,5 +134,6 @@ export const SelectUF = styled.div`
         }
 
     }
+
 `
 
