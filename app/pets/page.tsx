@@ -10,6 +10,8 @@ import EnergySelect from "@/components/Filters/EnergySelect";
 import SizeSelect from "@/components/Filters/SizeSelect";
 import IndependencySelect from "@/components/Filters/IdependencySelect";
 import TypeSelect from "@/components/Filters/TypeSelect";
+import { PetCard } from "@/components/PetCard/PetCard";
+import { PetsData } from "@/images/PetsData";
 
 export default function Pets() {
   return (
@@ -39,27 +41,24 @@ export default function Pets() {
       <S.PetsContainer>
         <S.PetsHead>
           <S.PetsTitle>
-            Encontre <strong>324 amigos</strong> na sua cidade
+            Encontre <strong>x amigos</strong> na sua cidade
           </S.PetsTitle>
-          <S.PetsFilterByType>
+          <S.PetsFilterByType style={{ display: "none" }}>
             <TypeSelect />
           </S.PetsFilterByType>
         </S.PetsHead>
 
         <S.PetsBody>
-          <div>
-            <s>animal 3</s>
-          </div>
-          <s>Animal 1</s>
-          <div>
-            <s>animal 3</s>
-          </div>
-          <div>
-            <s>animal 3</s>
-          </div>
-          <div>
-            <s>animal 3</s>
-          </div>
+          {PetsData.map((item) => {
+            return (
+              <PetCard
+                key={item.name}
+                name={item.name}
+                gender={item.gender}
+                image={item.image}
+              />
+            );
+          })}
         </S.PetsBody>
       </S.PetsContainer>
     </S.Container>

@@ -71,7 +71,7 @@ align-items: center;
 justify-content: flex-start;
 flex-direction: column;
 gap: 3.125rem; //50px
-height: 100vh;
+min-height: 100vh;
 width: 100%;
 
 padding-left: 2.1875rem; // 35px
@@ -103,4 +103,19 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 
 width: 100%;
+
+gap: 2rem; // 32px
+
+padding-bottom: 1rem;
+
+@media (max-width: 1400px){
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 1120px){
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
 `

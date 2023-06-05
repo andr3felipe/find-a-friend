@@ -1,10 +1,58 @@
 import styled from "styled-components";
 
 
-export const Container = styled.div``
+export const Container = styled.div`
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
 
-export const PetImage = styled.div``
+background-color: white;
+padding: 3px;
+border-radius: 20px;
+cursor: pointer;
 
-export const PetIcon = styled.div``
+font-weight: 700;
+font-size: 1.125rem; //18 px
 
-export const PetName = styled.div``
+max-width: 280px;
+
+&:hover {
+    background-color: var(--text);
+
+    color: white;
+
+    div {
+        background-color: var(--text);
+    
+    }
+}
+`
+
+export const PetImage = styled.div`
+border-radius: 20px;
+padding-bottom: 2rem;
+
+`
+
+export const PetIconContainer = styled.div`
+padding: 3px;
+border-radius: 10px;
+background-color: white;
+position: absolute;
+bottom: 55px;
+`
+
+export const PetIcon = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+width: 2.75rem; // 44px
+height: 2.75rem; // 44px
+border-radius: 10px;
+`
+
+export const PetName = styled.p`
+padding-bottom: 1rem;
+`
